@@ -1,6 +1,8 @@
 <?php
 namespace app\index\controller;
-use think
+use think\View;
+use think\Controller;
+use app\index\model\User;
 
 class Index
 {
