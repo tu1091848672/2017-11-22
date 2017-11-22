@@ -1,0 +1,23 @@
+<head>
+    <title>博客</title>
+    <style>
+        dl{
+            text-align:center;
+            border:2px solid #00CC99;
+            margin-top:100px;
+            margin-bottom:100px;
+            margin-right:400px;
+            margin-left:400px;
+        }
+    </style>
+</head>
+<body>
+<dl>
+    <h2>Blog</h2>
+    {volist name="list" id="vo"}
+    <dt>{$vo.id}  <a href="blog/details/id/{$vo.id}">{$vo.blog_title}</a>  发表时间：{$vo.blog_create_time|date="y-m-d",###}</dt><br>
+    {/volist}
+
+</dl>
+</body>
+</html>

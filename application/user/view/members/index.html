@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>成员</title>
+    <style>
+        dl{
+            text-align:center;
+            border:2px solid #00CC99;
+            margin-top:100px;
+            margin-bottom:100px;
+            margin-right:400px;
+            margin-left:400px;
+        }
+    </style>
+</head>
+<body>
+<dl>
+    <h1>成员</h1>
+    {volist name="list" id="vo"}
+    <dt><h3>{$vo.user_id} 姓名：{$vo.user_name}</h3></dt>
+    {/volist}
+
+</dl>
+</body>
+</html>
